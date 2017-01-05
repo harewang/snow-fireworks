@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>snow & fireworks</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        html, body {height: 100%;}
+        body {background: rgba(98,95,129,0.5);}
+        h1 {
+            position: absolute;
+            font-size: 2.5em;
+            width: 1em;
+            margin: 100px 90px;
+        }
+        div#pic {
+            position: relative;
+            margin: 10px auto;
+            width: 810px;
+            height: 610px;
+        }
+        canvas {
+            border: 2px solid #fff;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px #444;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+    <script src="particle.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>雪花下的焰火</h1>
+    <div id="pic">
+        <canvas id="fireworks" width="800" height="600"></canvas>
+        <canvas id="snow" width="800" height="600"></canvas>
+    </div>
+
+</body>
+</html>
