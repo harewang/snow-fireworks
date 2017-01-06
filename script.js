@@ -36,7 +36,7 @@ function stepFrw(ps, ctx, particle) {
 }
 
 function getSnowParticle() {
-    var size = Math.random()>0.8 ? getRandom(8,11) : getRandom(3,8);
+    var size = Math.random()>0.9 ? getRandom(8,11) : getRandom(3,8);
     function getDirection() {
         var t = getRandom(Math.PI*0.25, Math.PI*0.75);
         return new Vector2(Math.cos(t), Math.sin(t)).multiply(10).add(
@@ -45,7 +45,7 @@ function getSnowParticle() {
 
     return new SnowParticle({
         position: new Vector2(getRandom(50, WIDTH-50), 0),
-        size: size*0.7,
+        size: size,
         color: '#fff',
         life: 4*size,
         velocity: getDirection()
