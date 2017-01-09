@@ -28,7 +28,7 @@ function stepFrw(ps, ctx, particle) {
     
     ps.simulate(dt);
 
-    ctx.fillStyle = "rgba(30,30,37,0.2)";
+    ctx.fillStyle = "rgba(30,30,37,0.35)";
     ctx.fillRect(0,0,WIDTH,HEIGHT);
     ctx.fillStyle = '#4D4B6C'
     ctx.fillRect(375,545,50,55);
@@ -64,7 +64,7 @@ function getFrwParticle() {
 
     return new FrwParticle({
         position: new Vector2(getRandom(380,420), 550),
-        size: 4,
+        size: 1,
         color: getColor(),
         life: 10,
         velocity: getDirection()
